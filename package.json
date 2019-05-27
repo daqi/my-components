@@ -1,0 +1,37 @@
+{
+    "name": "my-component",
+    "description": "我的组件库",
+    "author": {
+        "name": "daqi",
+        "email": "daqidaqi@qq.com"
+    },
+    "license": "RPC",
+    "scripts": {
+        "dev": "yarn docz dev",
+        "build": "yarn docz build"
+    },
+    "devDependencies": {
+        "antd": "^3.19.0",
+        "babel-plugin-import": "^1.11.2",
+        "docz": "^1.2.0",
+        "docz-plugin-css": "^0.11.0",
+        "docz-theme-default": "^1.2.0",
+        "eslint": "^5.16.0",
+        "husky": "^2.3.0",
+        "lint-staged": "^8.1.7",
+        "react-hot-loader": "^4.8.8"
+    },
+    "dependencies": {},
+    "lint-staged": {
+        "src/**/*.{js,jsx,less}": [
+            "prettier --write",
+            "git add"
+        ],
+        "src/**/*.{js,jsx}": "eslint --fix"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    }
+}
