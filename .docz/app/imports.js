@@ -1,6 +1,6 @@
 export const imports = {
-  'button.mdx': () =>
+  'src/button/button.mdx': () =>
     import(
-      /* webpackPrefetch: true, webpackChunkName: "button" */ 'button.mdx'
+      /* webpackPrefetch: true, webpackChunkName: "src-button-button" */ 'src/button/button.mdx'
     ),
 }

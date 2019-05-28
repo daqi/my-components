@@ -1,14 +1,18 @@
 {
   "config": {
-    "title": "Cmcm Component",
-    "description": "My awesome app using docz",
+    "title": "My Component",
+    "description": "我的组件库",
     "menu": [],
-    "repository": null,
+    "repository": false,
     "native": false,
     "codeSandbox": true,
     "themeConfig": {},
     "separator": "-",
+    "typescript": false,
+    "theme": "/work/myComponent/node_modules/docz-theme-umi/es/index.js",
     "plugins": [
+      {},
+      {},
       {},
       {},
       {}
@@ -17,14 +21,14 @@
   "props": [],
   "entries": [
     {
-      "key": "button.mdx",
+      "key": "src/button/button.mdx",
       "value": {
         "name": "Button",
-        "id": "917826ec4be6a36e6d549e124174643d",
-        "filepath": "button.mdx",
+        "id": "8b9658365601a4e7461418a88980bf0f",
+        "filepath": "src/button/button.mdx",
         "link": "",
-        "slug": "button",
-        "route": "/button",
+        "slug": "src-button-button",
+        "route": "/src-button-button",
         "menu": "",
         "headings": [
           {

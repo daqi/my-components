@@ -7,21 +7,22 @@
     },
     "license": "RPC",
     "scripts": {
-        "dev": "yarn docz dev",
-        "build": "yarn docz build"
+        "dev": "umi-lib doc dev",
+        "build": "umi-lib build",
+        "doc:dev": "umi-lib doc dev",
+        "doc:build": "umi-lib doc build",
+        "doc:deploy": "umi-lib doc deploy"
     },
     "devDependencies": {
         "antd": "^3.19.0",
         "babel-plugin-import": "^1.11.2",
-        "docz": "^1.2.0",
-        "docz-plugin-css": "^0.11.0",
-        "docz-theme-default": "^1.2.0",
         "eslint": "^5.16.0",
         "husky": "^2.3.0",
-        "lint-staged": "^8.1.7",
-        "react-hot-loader": "^4.8.8"
+        "lint-staged": "^8.1.7"
     },
-    "dependencies": {},
+    "dependencies": {
+        "umi-library": "^1.6.0"
+    },
     "lint-staged": {
         "src/**/*.{js,jsx,less}": [
             "prettier --write",
